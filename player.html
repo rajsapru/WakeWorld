@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="Moda Logo (2) (1).png" type="image/png">
+    <title>WakeWorld music player</title>
+</head>
+<body>
+    <!---h1---><!---OPB<---/h1--->
+    <img src="images/opb.png"/><br />
+    <audio controls>
+        <source src="http://stream1.opb.org/radio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<body>
+    <h1>Random</h1>
+    <audio id="randomPlayer" controls>
+        <!-- Sources will be loaded by JavaScript -->
+    </audio>
+
+    <script>
+        // List of your radio streams
+        var streams = [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WUOMFM.mp3", // Replace with your stream URLs
+            "https://kexp.streamguys1.com/kexp64.aac",
+            // ... add more streams here
+        ];
+
+        // Function to select a random stream and play it
+        function playRandomStream() {
+            var randomIndex = Math.floor(Math.random() * streams.length);
+            var player = document.getElementById('randomPlayer');
+            player.src = streams[randomIndex]; // Set the source to a random stream
+            player.load(); // Load the new source
+            player.play(); // Play the stream
+        }
+
+        // Play a random stream when the page loads
+        window.onload = playRandomStream;
+    </script>
+    <br />
+<body>
+    <br />
+    <!---h1>Alpha corporate</h1-->
+    <br /><br /><img src="images/alphamediausa.png"><br />
+    <audio controls>
+        <source src="https://live.amperwave.net/direct/alphacorporate-kxtgammp3-ibc4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<body>
+    <h1>Zeno</h1>
+    <audio controls>
+        <source src="http://stream.zeno.fm/tckf82dvef9uv" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<body>
+    <h1>All classical</h1>
+    <audio controls>
+        <source src="https://allclassical.streamguys1.com/ac128kmp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<body>
+    <h1>Alpha corporate 2</h1>
+    <audio controls>
+        <source src="https://live.amperwave.net/direct/alphacorporate-kinkfmmp3-ibc4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</body>
+<body>
+    <h1>Freeform portland</h1>
+    <audio controls>
+        <source src="http://listen.freeformportland.org:8000/stream" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<body>
+        <h1>ModaLabs Broadcast</h1>
+        <p>This station is offline due to transmission problems.<br/>Contact the owner for more info.</p>
+        <!---source src="https://streams.radio.co/s516dee860/listen" type="audio/mpeg"--->
+</body>
+</body>
+</html>
